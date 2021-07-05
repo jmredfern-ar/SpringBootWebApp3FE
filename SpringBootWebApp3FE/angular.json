@@ -29,7 +29,10 @@
             "styles": [
               "src/styles.css"
             ],
-            "scripts": []
+            "scripts": [
+              "node_modules/jquery/dist/jquery.min.js",
+              "src/assets/custom.js"
+            ]
           },
           "configurations": {
             "production": {
@@ -96,7 +99,10 @@
             "styles": [
               "src/styles.css"
             ],
-            "scripts": []
+            "scripts": [
+              "node_modules/jquery/dist/jquery.min.js",
+              "src/assets/custom.js"
+            ]
           }
         }
       }
