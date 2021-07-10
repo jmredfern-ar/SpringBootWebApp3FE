@@ -1,11 +1,25 @@
+/* TAG SELECTORS */
+button {
+	text-align: center;
+}
+
+td, th {
+	text-align: center;
+}
+
+/* ID SELECTORS */
+#deleteBtn {
+	margin-left: 10px;
+}
+
+#viewBtn {
+	margin-left: 10px;
+}
+
 /* CLASS SELECTORS */
 .center {
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	height: 100px;
-}
-
-#deleteBtn {
-	margin-left: 10px;
 }

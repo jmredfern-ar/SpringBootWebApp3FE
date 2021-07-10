@@ -6,5 +6,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'SpringBootWebApp3FE!';
+  title = 'Student Registration App v3.0';
 }

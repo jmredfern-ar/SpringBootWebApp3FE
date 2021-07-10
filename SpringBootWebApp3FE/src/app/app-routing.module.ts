@@ -4,6 +4,7 @@ import { Routes, RouterModule } from '@angular/router';
 import { StudentListComponent } from './student-list/student-list.component';
 import { CreateStudentComponent } from './create-student/create-student.component';
 import { UpdateStudentComponent } from './update-student/update-student.component';
+import { StudentDetailComponent } from './student-detail/student-detail.component';
 import { AdminComponent } from './admin/admin.component';
 
 const routes : Routes = [
@@ -11,7 +12,9 @@ const routes : Routes = [
   {path: 'create-student', component: CreateStudentComponent },
   {path: '', redirectTo: 'students', pathMatch: 'full'},
   {path: 'update-student/:id', component: UpdateStudentComponent},
+  {path: 'student-detail/:id', component: StudentDetailComponent},
   {path: 'admin', component: AdminComponent}
+
 ]
 
 @NgModule({
