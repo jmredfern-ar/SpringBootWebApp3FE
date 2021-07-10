@@ -6,15 +6,16 @@ import { CreateStudentComponent } from './create-student/create-student.componen
 import { UpdateStudentComponent } from './update-student/update-student.component';
 import { StudentDetailComponent } from './student-detail/student-detail.component';
 import { AdminComponent } from './admin/admin.component';
+import { CourseListComponent } from './course-list/course-list.component';
 
 const routes : Routes = [
   {path : 'students', component: StudentListComponent},
+  {path : 'courses', component: CourseListComponent},
   {path: 'create-student', component: CreateStudentComponent },
   {path: '', redirectTo: 'students', pathMatch: 'full'},
   {path: 'update-student/:id', component: UpdateStudentComponent},
   {path: 'student-detail/:id', component: StudentDetailComponent},
   {path: 'admin', component: AdminComponent}
-
 ]
 
 @NgModule({

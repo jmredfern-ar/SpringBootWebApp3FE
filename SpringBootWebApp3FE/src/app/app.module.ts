@@ -11,6 +11,7 @@ import { FormsModule } from '@angular/forms';
 import { UpdateStudentComponent } from './update-student/update-student.component';
 import { AdminComponent } from './admin/admin.component';
 import { StudentDetailComponent } from './student-detail/student-detail.component';
+import { CourseListComponent } from './course-list/course-list.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import { StudentDetailComponent } from './student-detail/student-detail.componen
     CreateStudentComponent,
     UpdateStudentComponent,
     AdminComponent,
-    StudentDetailComponent
+    StudentDetailComponent,
+    CourseListComponent
   ],
   imports: [
     BrowserModule,
