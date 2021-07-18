@@ -12,6 +12,7 @@ import { UpdateStudentComponent } from './update-student/update-student.componen
 import { AdminComponent } from './admin/admin.component';
 import { StudentDetailComponent } from './student-detail/student-detail.component';
 import { CourseListComponent } from './course-list/course-list.component';
+import { ScholarshipListComponent } from './scholarship-list/scholarship-list.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +22,8 @@ import { CourseListComponent } from './course-list/course-list.component';
     UpdateStudentComponent,
     AdminComponent,
     StudentDetailComponent,
-    CourseListComponent
+    CourseListComponent,
+    ScholarshipListComponent
   ],
   imports: [
     BrowserModule,
