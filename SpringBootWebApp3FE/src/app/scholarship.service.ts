@@ -15,4 +15,9 @@ export class ScholarshipService {
   getScholarshipList(): Observable<Scholarship[]> {
     return this.httpClient.get<Scholarship[]>(this.baseURL);
   }
+
+  // FUNCTIONALITY FOR VIEW BUTTON
+  getScholarshipById(id?: number): Observable<Scholarship>{
+    return this.httpClient.get<Scholarship>(`${this.baseURL}/${id}`);
+  }              //http://localhost:4200/scholarship-detail/123
 }

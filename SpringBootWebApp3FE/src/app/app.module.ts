@@ -13,6 +13,7 @@ import { AdminComponent } from './admin/admin.component';
 import { StudentDetailComponent } from './student-detail/student-detail.component';
 import { CourseListComponent } from './course-list/course-list.component';
 import { ScholarshipListComponent } from './scholarship-list/scholarship-list.component';
+import { ScholarshipDetailComponent } from './scholarship-detail/scholarship-detail.component';
 
 @NgModule({
   declarations: [
@@ -23,7 +24,8 @@ import { ScholarshipListComponent } from './scholarship-list/scholarship-list.co
     AdminComponent,
     StudentDetailComponent,
     CourseListComponent,
-    ScholarshipListComponent
+    ScholarshipListComponent,
+    ScholarshipDetailComponent
   ],
   imports: [
     BrowserModule,

@@ -3,6 +3,6 @@ import { Student } from './student';
 export class Scholarship {
 	id?: number;
 	name?: string;
-	amount?: number;
-	students?: Student[]	
+	amount: number = 0;
+	students: Student[]	= [];
 }

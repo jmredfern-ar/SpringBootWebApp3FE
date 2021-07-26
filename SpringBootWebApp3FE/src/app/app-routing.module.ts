@@ -8,6 +8,7 @@ import { StudentDetailComponent } from './student-detail/student-detail.componen
 import { AdminComponent } from './admin/admin.component';
 import { CourseListComponent } from './course-list/course-list.component';
 import { ScholarshipListComponent } from './scholarship-list/scholarship-list.component';
+import { ScholarshipDetailComponent } from './scholarship-detail/scholarship-detail.component';
 
 const routes : Routes = [
   {path : 'students', component: StudentListComponent},
@@ -17,6 +18,7 @@ const routes : Routes = [
   {path: '', redirectTo: 'students', pathMatch: 'full'},
   {path: 'update-student/:id', component: UpdateStudentComponent},
   {path: 'student-detail/:id', component: StudentDetailComponent},
+  {path: 'scholarship-detail/:id', component: ScholarshipDetailComponent},
   {path: 'admin', component: AdminComponent}
 ]
 

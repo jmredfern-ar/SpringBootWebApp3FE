@@ -5,21 +5,32 @@
             <th>Id</th>
             <th>Name</th>
 			<th>Department</th>
-			<th>Students</th>
+            <th>Students</th>
+            <th>View</th>
         </tr>
     </thead>
     <tbody>
         <tr *ngFor = "let scholarship of scholarships">
             <td>{{scholarship.id}}</td>
             <td>{{scholarship.name}}</td>
-			<td>{{scholarship.amount}}</td>
+			<td>{{scholarship.amount | currency}}</td>
 			<td>
 				<table>
 					<tr *ngFor = "let student of scholarship.students">
 						<td>{{student.name}}</td>
 					</tr>
 				</table>
-			</td>
+            </td>
+            <td>
+            <button (click) = "viewScholarship(scholarship.id)" class="btn btn-primary" id="viewBtn">View</button>
+            </td>
+        </tr>
+        <tr>
+            <td><b>Totals: </b></td>
+            <td></td>
+            <td>{{amountTotal | currency}}</td>
+            <td>{{studentCount}}</td>
+            <td></td>
         </tr>
     </tbody>
 </table>
