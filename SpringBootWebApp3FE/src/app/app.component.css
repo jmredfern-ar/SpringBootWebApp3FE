@@ -1,0 +1,13 @@
+body {
+	background-color: #1ee3cf;
+}
+
+#div_styles {
+	display: flex;
+	justify-content: center;
+}
+
+.img_styles {
+	width: 400px;
+	height: 300px;
+}

@@ -44,17 +44,16 @@ export class ScholarshipListComponent implements OnInit {
 
   //  NEW
   sumAmounts() {
-    for(var scholarship of this.scholarships) {
+    for(let scholarship of this.scholarships) {
       this.amountTotal += scholarship.amount;
     }
   }
 
   sumStudents() {
-    for(var scholarship of this.scholarships) {
+    for(let scholarship of this.scholarships) {
       for(let i=0; i <scholarship.students.length; i++) {
         this.studentCount++;
       }
     }
   }
-
 }
