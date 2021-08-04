@@ -1,13 +1,25 @@
+/* HTML TAG SELECTORS / STYLES */
 body {
 	background-color: #1ee3cf;
 }
 
-#div_styles {
+/* ID SELECTORS / STYLES */
+#img_table_div_styles {
 	display: flex;
 	justify-content: center;
 }
 
+#special_color {
+	color: red;
+}
+
+/* CLASS SELECTORS / STYLES */
 .img_styles {
 	width: 400px;
 	height: 300px;
 }
+
+.center_this_text {
+	text-align: center;
+}
+
