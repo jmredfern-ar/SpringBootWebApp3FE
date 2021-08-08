@@ -1,13 +1,17 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { HttpClientModule } from '@angular/common/http';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+// import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { BsDatepickerModule} from 'ngx-bootstrap/datepicker';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+
 
 // import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { StudentListComponent } from './student-list/student-list.component';
 import { AppRoutingModule } from './app-routing.module';
 import { CreateStudentComponent } from './create-student/create-student.component';
-import { FormsModule } from '@angular/forms';
 import { UpdateStudentComponent } from './update-student/update-student.component';
 import { AdminComponent } from './admin/admin.component';
 import { StudentDetailComponent } from './student-detail/student-detail.component';
@@ -32,7 +36,11 @@ import { ScholarshipDetailComponent } from './scholarship-detail/scholarship-det
     // AppRoutingModule,
     HttpClientModule,
     AppRoutingModule,
-    FormsModule
+    FormsModule,
+    ReactiveFormsModule,
+    // NgbModule
+    BrowserAnimationsModule,
+    BsDatepickerModule.forRoot()
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -17,6 +17,34 @@
 				[(ngModel)] = "student.email" name="email">
 		</div>
 
+		<!-- NGX DATEPICKER -->
+		<div class="col-xs-12 col-12 col-md-4 form-group">
+			<label for="dob">DOB</label>
+			<input type="text" 
+				class="form-control" 
+				bsDatepicker 
+				[bsValue]="bsValue"
+				[bsConfig]="datePickerConfig" 
+				[(ngModel)]="student.dob" 
+				autocomplete="off"
+				name="dob"/>
+		</div>
+
+		<!-- AGE DDL -->
+		<div class="form-group">
+			<label>Age</label>
+			<select class="form-control" 
+					id="age"
+					[(ngModel)]="student.age"
+					name="age">
+				<option *ngFor="let age of ageList" [value]="age">
+					{{age}}
+				</option>
+			</select>
+		</div>
+
 		<button class="btn btn-success" type="submit">Submit</button>
 	</form>
 </div>
+
+<!-- <pre>Model: {{model | json }}</pre> -->
