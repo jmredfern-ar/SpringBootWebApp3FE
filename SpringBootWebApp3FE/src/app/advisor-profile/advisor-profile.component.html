@@ -1,0 +1,27 @@
+<h2>Advisor Profile</h2>
+
+
+<mat-selection-list #advisorList [multiple]="false" (click)="onAdvisorChange(advisorList)" class="list1">
+	<ng-container *ngFor="let advisor of advisor2DepartmentList">
+		<mat-list-option [value]="advisor" #selectedAdvisor [ngClass]="{active: selectedAdvisor.selected}">
+			{{advisor.name}}
+		</mat-list-option>
+	</ng-container>
+
+</mat-selection-list>
+
+<mat-selection-list #departmentList [multiple]="false" class="list2" (click)="onDepartmentChange(departmentList)">
+	<ng-container *ngIf="advisorSelected && advisorSelected.department && advisorSelected.department.length">
+		<mat-list-option *ngFor="let d of advisorSelected.department" [value]="d" #selectedDepartment
+			[ngClass]="{active: selectedDepartment.selected}">
+			{{d}}
+		</mat-list-option>
+	</ng-container>
+</mat-selection-list>
+
+<p>
+	Option selected: {{advisorList.selectedOptions.selected[0]?.value.name}}
+</p>
+<p>
+	Sub selected: {{departmentList.selectedOptions.selected[0]?.value}}
+</p>

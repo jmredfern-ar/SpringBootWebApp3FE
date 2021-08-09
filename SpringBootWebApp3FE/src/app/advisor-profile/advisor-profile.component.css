@@ -1,0 +1,44 @@
+h2 {
+	text-align: center;
+}
+
+/* ID SELECTORS / STYLES */
+#mat_select_div_styles {
+	display: flex;
+	justify-content: center;
+}
+
+ul li{cursor:pointer;}
+.active{
+  background-color:blue;
+  color: #fff
+}
+.active ul{
+  display:block !important;
+}
+
+.inactive {
+  color: black;
+}
+
+.list1.mat-selection-list {
+  display: flex;
+  justify-content: center;
+}
+
+
+.list2.mat-selection-list {
+  width:100px;
+  margin-left: auto;
+  margin-right: 0.2rem;
+}
+
+.mat-list-item {
+  border: 2px solid #ccc;
+  text-align: center;
+}
+
+.sub-menu {
+  position: absolute;
+  top: 250px;
+}

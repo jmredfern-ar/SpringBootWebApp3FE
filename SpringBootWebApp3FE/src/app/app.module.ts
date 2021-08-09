@@ -5,6 +5,8 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 // import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { BsDatepickerModule} from 'ngx-bootstrap/datepicker';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { MatSelectModule } from '@angular/material/select';
+import { MatListModule } from "@angular/material/list";
 
 
 // import { AppRoutingModule } from './app-routing.module';
@@ -18,6 +20,8 @@ import { StudentDetailComponent } from './student-detail/student-detail.componen
 import { CourseListComponent } from './course-list/course-list.component';
 import { ScholarshipListComponent } from './scholarship-list/scholarship-list.component';
 import { ScholarshipDetailComponent } from './scholarship-detail/scholarship-detail.component';
+import { AdvisorProfileComponent } from './advisor-profile/advisor-profile.component';
+import { MatTestComponent } from './mat-test/mat-test.component';
 
 @NgModule({
   declarations: [
@@ -29,7 +33,9 @@ import { ScholarshipDetailComponent } from './scholarship-detail/scholarship-det
     StudentDetailComponent,
     CourseListComponent,
     ScholarshipListComponent,
-    ScholarshipDetailComponent
+    ScholarshipDetailComponent,
+    AdvisorProfileComponent,
+    MatTestComponent
   ],
   imports: [
     BrowserModule,
@@ -40,7 +46,9 @@ import { ScholarshipDetailComponent } from './scholarship-detail/scholarship-det
     ReactiveFormsModule,
     // NgbModule
     BrowserAnimationsModule,
-    BsDatepickerModule.forRoot()
+    BsDatepickerModule.forRoot(),
+    MatSelectModule,
+    MatListModule
   ],
   providers: [],
   bootstrap: [AppComponent]

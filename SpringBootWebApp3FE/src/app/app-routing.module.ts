@@ -9,6 +9,8 @@ import { AdminComponent } from './admin/admin.component';
 import { CourseListComponent } from './course-list/course-list.component';
 import { ScholarshipListComponent } from './scholarship-list/scholarship-list.component';
 import { ScholarshipDetailComponent } from './scholarship-detail/scholarship-detail.component';
+import { AdvisorProfileComponent } from './advisor-profile/advisor-profile.component';
+import { MatTestComponent } from './mat-test/mat-test.component';
 
 const routes : Routes = [
   {path : 'students', component: StudentListComponent},
@@ -19,7 +21,9 @@ const routes : Routes = [
   {path: 'update-student/:id', component: UpdateStudentComponent},
   {path: 'student-detail/:id', component: StudentDetailComponent},
   {path: 'scholarship-detail/:id', component: ScholarshipDetailComponent},
-  {path: 'admin', component: AdminComponent}
+  {path: 'admin', component: AdminComponent},
+  {path: 'advisor-profile', component: AdvisorProfileComponent},
+  {path: 'mat-test', component: MatTestComponent}
 ]
 
 @NgModule({
